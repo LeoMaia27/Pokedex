@@ -1,0 +1,122 @@
+:root {
+    --color-grass: #14A06F;
+    --normal-color: #a6a877;
+    --fire-color: #ee7f30;
+    --water-color: #678fee;
+    --bug-color: #a8b720;   
+    --poison-color: #a040a0;
+    --electric-color: #f7cf2e;
+}
+
+img {
+    max-width: 100%;
+}
+
+.pokemonList {
+    margin: 1rem;
+    padding: 1.2rem;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: .5rem;
+}
+
+.pokemon {
+    width: 100%;
+    padding: 1rem;
+    /* background-color: var(--color-grass); */
+    color: white;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pokemon .number {
+    text-align: right;
+}
+
+.pokemon .name {
+    font-size: 1.12rem;
+    text-transform: capitalize;
+}
+
+.details {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details img {
+    max-width: 100%;
+    height: 6.22rem;
+    align-self: flex-end;
+}
+
+.types {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    gap: .5rem;
+}
+
+.type {
+    background-color: #12715f;
+    color: #fff;
+    padding: .25rem;
+    border-radius: 8px;
+    padding: .42rem;
+    font-size: .88rem;
+    text-align: center;
+}
+
+/*color of types*/
+.grass {
+    background-color: var(--color-grass);
+}
+
+.fire {
+    background-color: var(--fire-color);
+}
+
+.normal {
+    background-color: var(--normal-color);
+}
+
+.water {
+    background-color: var(--water-color);
+}
+
+.bug {
+    background-color: var(--bug-color);
+}
+
+.poison {
+    background-color: var(--poison-color);
+}
+
+.electric {
+    background-color: var(--electric-color);
+}
+
+@media screen and (max-width: 454px) {
+    .pokemonList {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+    .pokemonList {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}   
