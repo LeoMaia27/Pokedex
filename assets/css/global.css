@@ -7,13 +7,14 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #f6f8fc;
+    overflow-x: hidden;
 }
 
 .content {
      background-color: #fff;
      width: 100vw;
-     height: 100vh;
-     /* padding: 1rem; */
+     height: auto;
+     border-radius: 1rem;
 }
 
 h1 {
